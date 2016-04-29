@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         let userBirthday = globalvar.userBirthday
         globalvar.userBirthday = dateFormatter2.stringFromDate(sender.date)
         
-        dateTextField.text = userBirthday
+        dateTextField.text = dateFormatter.stringFromDate(sender.date)
         
     }
     
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         
     }
     
-    func doneButtonAction()
+    @IBAction func doneButtonAction()
     {
         self.dateTextField.resignFirstResponder()
         let userBirthday = globalvar.userBirthday
@@ -89,11 +89,17 @@ class ViewController: UIViewController {
         let yes = UIAlertAction(
             title: "That's so true!",
             style: .Default,
-            handler: {action in self.Next()})
+            handler: { (_) -> Void in
+                
+                self.performSegueWithIdentifier("bDayDone", sender: self)
+        })
         let nope = UIAlertAction(
             title: "Nope",
             style: .Cancel,
-            handler: {action in self.Redo()})
+            handler: {(_) -> Void in
+                self.dateTextField.resignFirstResponder()
+                self.dateTextField.text = ""
+        })
         
         alert.addAction(yes)
         alert.addAction(nope)
@@ -101,21 +107,6 @@ class ViewController: UIViewController {
       
     }
     
-    func Redo(){
-        self.dateTextField.resignFirstResponder()
-        let userBirthday = globalvar.userBirthday
-        globalvar.userBirthday = ""
-        self.dateTextField.text = userBirthday
-        
-    }
-    
-    func Next() {
-        let secondVC = SecondViewController(nibName: "SecondView", bundle: nil)
-        let navController = UINavigationController(rootViewController: secondVC)
-        self.presentViewController(navController, animated: true, completion: nil)
-
-    }
-  
 
 }
 

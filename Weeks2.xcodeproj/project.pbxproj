@@ -16,6 +16,9 @@
 		8818F0041CD3096B00E8E3D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8818F0021CD3096B00E8E3D0 /* LaunchScreen.storyboard */; };
 		8818F00F1CD3096B00E8E3D0 /* Weeks2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F00E1CD3096B00E8E3D0 /* Weeks2Tests.swift */; };
 		8818F01A1CD3096B00E8E3D0 /* Weeks2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F0191CD3096B00E8E3D0 /* Weeks2UITests.swift */; };
+		8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */; };
+		8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */; };
+		8818F0361CD3A3F300E8E3D0 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8818F0351CD3A3F300E8E3D0 /* Impact.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		8818F0151CD3096B00E8E3D0 /* Weeks2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weeks2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8818F0191CD3096B00E8E3D0 /* Weeks2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weeks2UITests.swift; sourceTree = "<group>"; };
 		8818F01B1CD3096B00E8E3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell90.swift; sourceTree = "<group>"; };
+		8818F0351CD3A3F300E8E3D0 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 		D4DAB7064E8363B6F004961A /* Pods_Weeks2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weeks2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D7ED062F05B173593851B0 /* Pods-Weeks2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.debug.xcconfig"; sourceTree = "<group>"; };
 		EF90C0E62CFAFB9CC4BB4FD4 /* Pods-Weeks2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		8818EFEA1CD3096B00E8E3D0 = {
 			isa = PBXGroup;
 			children = (
+				8818F0371CD3A41600E8E3D0 /* Resources */,
 				8818EFF51CD3096B00E8E3D0 /* Weeks2 */,
 				8818F00D1CD3096B00E8E3D0 /* Weeks2Tests */,
 				8818F0181CD3096B00E8E3D0 /* Weeks2UITests */,
@@ -124,12 +131,14 @@
 			isa = PBXGroup;
 			children = (
 				8818EFF61CD3096B00E8E3D0 /* AppDelegate.swift */,
+				8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */,
 				8818EFF81CD3096B00E8E3D0 /* ViewController.swift */,
 				8818EFFA1CD3096B00E8E3D0 /* Main.storyboard */,
 				8818F0001CD3096B00E8E3D0 /* Assets.xcassets */,
 				8818F0021CD3096B00E8E3D0 /* LaunchScreen.storyboard */,
 				8818F0051CD3096B00E8E3D0 /* Info.plist */,
 				8818EFFD1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld */,
+				8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */,
 			);
 			path = Weeks2;
 			sourceTree = "<group>";
@@ -150,6 +159,14 @@
 				8818F01B1CD3096B00E8E3D0 /* Info.plist */,
 			);
 			path = Weeks2UITests;
+			sourceTree = "<group>";
+		};
+		8818F0371CD3A41600E8E3D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8818F0351CD3A3F300E8E3D0 /* Impact.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +281,7 @@
 			files = (
 				8818F0041CD3096B00E8E3D0 /* LaunchScreen.storyboard in Resources */,
 				8818F0011CD3096B00E8E3D0 /* Assets.xcassets in Resources */,
+				8818F0361CD3A3F300E8E3D0 /* Impact.ttf in Resources */,
 				8818EFFC1CD3096B00E8E3D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */,
 				8818EFFF1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld in Sources */,
+				8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */,
 				8818EFF91CD3096B00E8E3D0 /* ViewController.swift in Sources */,
 				8818EFF71CD3096B00E8E3D0 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +502,7 @@
 			baseConfigurationReference = E7D7ED062F05B173593851B0 /* Pods-Weeks2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Weeks2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = keewonma.Weeks2;
@@ -494,6 +515,7 @@
 			baseConfigurationReference = EF90C0E62CFAFB9CC4BB4FD4 /* Pods-Weeks2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Weeks2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = keewonma.Weeks2;
