@@ -1,0 +1,29 @@
+PODS:
+  - Bolts/Tasks (1.7.0)
+  - CircleMenu (0.0.7)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - ElasticTransition (2.2.0):
+    - MotionAnimation (~> 0.0.5)
+  - Fabric (1.6.7)
+  - MotionAnimation (0.0.5)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+
+DEPENDENCIES:
+  - CircleMenu (~> 0.0.0)
+  - Crashlytics
+  - ElasticTransition
+  - Fabric
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  CircleMenu: 2be6551c0ad426d8fc04cf16600271477b293d22
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  ElasticTransition: e5cd2b7d42497ba06cd928922690f335ab544a25
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  MotionAnimation: d9d4060bf4f494dd61bf868b8969a31b1b0b6f2a
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+
+COCOAPODS: 0.39.0
