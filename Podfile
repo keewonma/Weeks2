@@ -8,7 +8,7 @@ target 'Weeks2' do
   #pod 'ChameleonFramework/Swift'
   #pod 'TextFieldEffects'
   #pod 'iRate'
-  #pod 'CircleMenu', '~> 0.0.0'
+  pod 'CircleMenu', '~> 0.0.0'
   #pod 'Fabric'
   #pod 'Crashlytics'
   #pod 'Parse'

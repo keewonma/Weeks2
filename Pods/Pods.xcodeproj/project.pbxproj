@@ -6,43 +6,227 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D682D817AED0FA3A4812F26D2107C38 /* CircleMenu-dummy.m */; };
+		1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD243A500ECBADB74B69923F66AD45 /* CircleMenuButton.swift */; };
+		23D2F9231CC3A9F718DB91DFE50CE943 /* Pods-Weeks2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E8A45F3F942C8741DFF937516FB155 /* Pods-Weeks2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C4047B8D958F8EB10497D3995383A /* CircleMenu.swift */; };
+		649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 990904BD05E38FBE546456B25D268E46 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8830DCBDF8FA7BE61CA8E87A8F4F1BEE /* Pods-Weeks2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5773D9582737E37DF983F721BAF09 /* Pods-Weeks2-dummy.m */; };
+		8FC2431582CF6D666E1DC06786CD90F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC0564166B07ADA48D3FE08FDC6E38 /* CircleMenuLoader.swift */; };
+		DCD423882BEE47936BE5A0E6D2B09273 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41DAF722C64B6057AC53D5D9EF33D713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27533A6098E2BDD80827924FA8F4E742;
+			remoteInfo = CircleMenu;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0788541420C401697C1878F3C73FC949 /* Pods-Weeks2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weeks2.release.xcconfig"; sourceTree = "<group>"; };
+		2C7D7F5FEB505E45405981D701958AE4 /* Pods-Weeks2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Weeks2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		356B05B8AF51297E2D7ACE22B17C605B /* Pods-Weeks2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Weeks2.modulemap"; sourceTree = "<group>"; };
+		39E8A45F3F942C8741DFF937516FB155 /* Pods-Weeks2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weeks2-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BBFE471A65BB5D928056483B7D93566 /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABC0564166B07ADA48D3FE08FDC6E38 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+		6189086147C3242F2C82B34DCB1BBAAE /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		6CCD243A500ECBADB74B69923F66AD45 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
+		7D682D817AED0FA3A4812F26D2107C38 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
+		7FC2DA5AA5E67B183A4183598819B710 /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
+		990904BD05E38FBE546456B25D268E46 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
+		99645F9A02A9D70C76F4DDB122F27ECE /* Pods_Weeks2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weeks2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C1A51A7DC1AE4A4BB69A259B95E399 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78C4047B8D958F8EB10497D3995383A /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
+		AFAA49E1E33063BBBF7948C5EC763057 /* Pods-Weeks2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Weeks2-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C697008C2A386D48499B0BEE273B4AD1 /* Pods-Weeks2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Weeks2-frameworks.sh"; sourceTree = "<group>"; };
+		CFF5773D9582737E37DF983F721BAF09 /* Pods-Weeks2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weeks2-dummy.m"; sourceTree = "<group>"; };
+		D920A481ADC1998A026AEB96ABE4E0AC /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CircleMenu.modulemap; sourceTree = "<group>"; };
+		DB7C983B4483AE5A65CA14B6BBF5AA1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F780E63933744B2BD31A3978F20E308A /* Pods-Weeks2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weeks2.debug.xcconfig"; sourceTree = "<group>"; };
+		FC99672747F4E6DE78F1ABD01AB11C45 /* Pods-Weeks2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Weeks2-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		6992033ADA3EF99FE99BC4E6536E1AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD423882BEE47936BE5A0E6D2B09273 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB663CCA004DED63795587E939582B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC2431582CF6D666E1DC06786CD90F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
+		2976700A6F47BF32A9CC19FBFC42B982 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFA1F528C68423C2BFA64446F2D828BC /* Pods-Weeks2 */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		77B5C9FF5F44F196210011B589A5CE48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4BBFE471A65BB5D928056483B7D93566 /* CircleMenu.framework */,
+				99645F9A02A9D70C76F4DDB122F27ECE /* Pods_Weeks2.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FC2C8DB145F49E68E53F08D6470ABE62 /* Pods */,
+				77B5C9FF5F44F196210011B589A5CE48 /* Products */,
+				2976700A6F47BF32A9CC19FBFC42B982 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		BC18252F39785BD19EB98851C70541CB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				D920A481ADC1998A026AEB96ABE4E0AC /* CircleMenu.modulemap */,
+				7FC2DA5AA5E67B183A4183598819B710 /* CircleMenu.xcconfig */,
+				7D682D817AED0FA3A4812F26D2107C38 /* CircleMenu-dummy.m */,
+				6189086147C3242F2C82B34DCB1BBAAE /* CircleMenu-prefix.pch */,
+				990904BD05E38FBE546456B25D268E46 /* CircleMenu-umbrella.h */,
+				DB7C983B4483AE5A65CA14B6BBF5AA1E /* Info.plist */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/CircleMenu";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CFA1F528C68423C2BFA64446F2D828BC /* Pods-Weeks2 */ = {
+			isa = PBXGroup;
+			children = (
+				A6C1A51A7DC1AE4A4BB69A259B95E399 /* Info.plist */,
+				356B05B8AF51297E2D7ACE22B17C605B /* Pods-Weeks2.modulemap */,
+				2C7D7F5FEB505E45405981D701958AE4 /* Pods-Weeks2-acknowledgements.markdown */,
+				AFAA49E1E33063BBBF7948C5EC763057 /* Pods-Weeks2-acknowledgements.plist */,
+				CFF5773D9582737E37DF983F721BAF09 /* Pods-Weeks2-dummy.m */,
+				C697008C2A386D48499B0BEE273B4AD1 /* Pods-Weeks2-frameworks.sh */,
+				FC99672747F4E6DE78F1ABD01AB11C45 /* Pods-Weeks2-resources.sh */,
+				39E8A45F3F942C8741DFF937516FB155 /* Pods-Weeks2-umbrella.h */,
+				F780E63933744B2BD31A3978F20E308A /* Pods-Weeks2.debug.xcconfig */,
+				0788541420C401697C1878F3C73FC949 /* Pods-Weeks2.release.xcconfig */,
+			);
+			name = "Pods-Weeks2";
+			path = "Target Support Files/Pods-Weeks2";
+			sourceTree = "<group>";
+		};
+		EB3CDE3CED2DBE1111F82C01AD3DF36B /* CircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A78C4047B8D958F8EB10497D3995383A /* CircleMenu.swift */,
+				6CCD243A500ECBADB74B69923F66AD45 /* CircleMenuButton.swift */,
+				5ABC0564166B07ADA48D3FE08FDC6E38 /* CircleMenuLoader.swift */,
+				BC18252F39785BD19EB98851C70541CB /* Support Files */,
+			);
+			path = CircleMenu;
+			sourceTree = "<group>";
+		};
+		FC2C8DB145F49E68E53F08D6470ABE62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB3CDE3CED2DBE1111F82C01AD3DF36B /* CircleMenu */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		698A6FD222CA37390B8523628E669CD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D2F9231CC3A9F718DB91DFE50CE943 /* Pods-Weeks2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */;
+			buildPhases = (
+				99E6B72FADDCBB3E131687356A42AA64 /* Sources */,
+				FB663CCA004DED63795587E939582B91 /* Frameworks */,
+				EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleMenu;
+			productName = CircleMenu;
+			productReference = 4BBFE471A65BB5D928056483B7D93566 /* CircleMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C95A3E68143352E276DB84C37367975 /* Pods-Weeks2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1BBB2A7D3C1E7D688291EA0C2EADD5 /* Build configuration list for PBXNativeTarget "Pods-Weeks2" */;
+			buildPhases = (
+				92ED22380D33F9DC78409DA485560558 /* Sources */,
+				6992033ADA3EF99FE99BC4E6536E1AD7 /* Frameworks */,
+				698A6FD222CA37390B8523628E669CD3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FED3D29A91C2B0DA7FF0CC777DE5E43 /* PBXTargetDependency */,
+			);
+			name = "Pods-Weeks2";
+			productName = "Pods-Weeks2";
+			productReference = 99645F9A02A9D70C76F4DDB122F27ECE /* Pods_Weeks2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,15 +243,78 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = 77B5C9FF5F44F196210011B589A5CE48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */,
+				2C95A3E68143352E276DB84C37367975 /* Pods-Weeks2 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		92ED22380D33F9DC78409DA485560558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8830DCBDF8FA7BE61CA8E87A8F4F1BEE /* Pods-Weeks2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E6B72FADDCBB3E131687356A42AA64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */,
+				638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */,
+				1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */,
+				A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FED3D29A91C2B0DA7FF0CC777DE5E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleMenu;
+			target = 27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */;
+			targetProxy = 41DAF722C64B6057AC53D5D9EF33D713 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		442615A31C978BF6F702550E842EE328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0788541420C401697C1878F3C73FC949 /* Pods-Weeks2.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Weeks2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Weeks2/Pods-Weeks2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Weeks2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -141,14 +388,118 @@
 			};
 			name = Release;
 		};
+		8317F934ECE948EBF54D03B9F68CA3B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC2DA5AA5E67B183A4183598819B710 /* CircleMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFDCADCE8BF494CAEBC3D9946BBF691B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC2DA5AA5E67B183A4183598819B710 /* CircleMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D21E17ECDD465F36A7641B1C65C118E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F780E63933744B2BD31A3978F20E308A /* Pods-Weeks2.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Weeks2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Weeks2/Pods-Weeks2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Weeks2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCADCE8BF494CAEBC3D9946BBF691B /* Debug */,
+				8317F934ECE948EBF54D03B9F68CA3B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B1BBB2A7D3C1E7D688291EA0C2EADD5 /* Build configuration list for PBXNativeTarget "Pods-Weeks2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21E17ECDD465F36A7641B1C65C118E7 /* Debug */,
+				442615A31C978BF6F702550E842EE328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

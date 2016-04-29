@@ -1,1 +1,10 @@
+PODS:
+  - CircleMenu (0.0.7)
+
+DEPENDENCIES:
+  - CircleMenu (~> 0.0.0)
+
+SPEC CHECKSUMS:
+  CircleMenu: 2be6551c0ad426d8fc04cf16600271477b293d22
+
 COCOAPODS: 0.39.0
