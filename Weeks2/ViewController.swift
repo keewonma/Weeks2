@@ -9,10 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    struct globalvar {
-        static var userBirthday = ""
-    }
-
+    
 
     @IBOutlet weak var dateTextField: UITextField!
     
@@ -31,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = Colors.lightgray
         self.addDoneButtonOnKeyboard()
     }
 
@@ -47,10 +45,12 @@ class ViewController: UIViewController {
         let dateFormatter2 = NSDateFormatter()
         dateFormatter2.dateStyle = NSDateFormatterStyle.FullStyle
         dateFormatter2.timeStyle = NSDateFormatterStyle.NoStyle
-        
-        let userBirthday = globalvar.userBirthday
-        globalvar.userBirthday = dateFormatter2.stringFromDate(sender.date)
-        
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let userBirthday = dateFormatter2.stringFromDate(sender.date)
+        defaults.setValue(userBirthday, forKey: "Birthday")
+        defaults.setValue(sender.date, forKey: "bDate")
+
         dateTextField.text = dateFormatter.stringFromDate(sender.date)
         
     }
@@ -79,7 +79,8 @@ class ViewController: UIViewController {
     @IBAction func doneButtonAction()
     {
         self.dateTextField.resignFirstResponder()
-        let userBirthday = globalvar.userBirthday
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let userBirthday = defaults.objectForKey("Birthday") as? String ?? String()
         
         let message = "You were born on a \(userBirthday)"
         let alert = UIAlertController(
@@ -90,8 +91,7 @@ class ViewController: UIViewController {
             title: "That's so true!",
             style: .Default,
             handler: { (_) -> Void in
-                
-                self.performSegueWithIdentifier("bDayDone", sender: self)
+                self.performSegueWithIdentifier("1YearView", sender: self)
         })
         let nope = UIAlertAction(
             title: "Nope",

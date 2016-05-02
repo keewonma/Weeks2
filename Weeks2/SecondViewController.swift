@@ -14,23 +14,24 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = Colors.lightgray
 
         // Do any additional setup after loading the view.
     }
     
     // MARK: set how many images in collection view
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  52
+        return  4
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 90
+        return 13
     }
     
     // MARK: add images to collection view
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        collectionView.backgroundColor = UIColor.whiteColor()
+        collectionView.backgroundColor = Colors.lightgray
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell90
         let image = UIImage(named: "blackteardrop")
         

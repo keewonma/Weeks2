@@ -19,6 +19,12 @@
 		8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */; };
 		8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */; };
 		8818F0361CD3A3F300E8E3D0 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8818F0351CD3A3F300E8E3D0 /* Impact.ttf */; };
+		888507101CD735A9002BB28C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885070F1CD735A9002BB28C /* Colors.swift */; };
+		888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507131CD752D1002BB28C /* ThirdViewController.swift */; };
+		888507171CD75910002BB28C /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507161CD75910002BB28C /* HolderView.swift */; };
+		8885071A1CD7595F002BB28C /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507191CD7595F002BB28C /* RectangleLayer.swift */; };
+		8885071C1CD75966002BB28C /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885071B1CD75966002BB28C /* ArcLayer.swift */; };
+		8885071E1CD75F7A002BB28C /* rootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885071D1CD75F7A002BB28C /* rootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +61,13 @@
 		8818F01B1CD3096B00E8E3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell90.swift; sourceTree = "<group>"; };
-		8818F0351CD3A3F300E8E3D0 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
+		8818F0351CD3A3F300E8E3D0 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Impact.ttf; path = ../Impact.ttf; sourceTree = "<group>"; };
+		8885070F1CD735A9002BB28C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		888507131CD752D1002BB28C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		888507161CD75910002BB28C /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
+		888507191CD7595F002BB28C /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		8885071B1CD75966002BB28C /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
+		8885071D1CD75F7A002BB28C /* rootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rootNavigationController.swift; sourceTree = "<group>"; };
 		D4DAB7064E8363B6F004961A /* Pods_Weeks2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weeks2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D7ED062F05B173593851B0 /* Pods-Weeks2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.debug.xcconfig"; sourceTree = "<group>"; };
 		EF90C0E62CFAFB9CC4BB4FD4 /* Pods-Weeks2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,7 +119,6 @@
 		8818EFEA1CD3096B00E8E3D0 = {
 			isa = PBXGroup;
 			children = (
-				8818F0371CD3A41600E8E3D0 /* Resources */,
 				8818EFF51CD3096B00E8E3D0 /* Weeks2 */,
 				8818F00D1CD3096B00E8E3D0 /* Weeks2Tests */,
 				8818F0181CD3096B00E8E3D0 /* Weeks2UITests */,
@@ -130,15 +141,12 @@
 		8818EFF51CD3096B00E8E3D0 /* Weeks2 */ = {
 			isa = PBXGroup;
 			children = (
-				8818EFF61CD3096B00E8E3D0 /* AppDelegate.swift */,
-				8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */,
-				8818EFF81CD3096B00E8E3D0 /* ViewController.swift */,
-				8818EFFA1CD3096B00E8E3D0 /* Main.storyboard */,
-				8818F0001CD3096B00E8E3D0 /* Assets.xcassets */,
-				8818F0021CD3096B00E8E3D0 /* LaunchScreen.storyboard */,
-				8818F0051CD3096B00E8E3D0 /* Info.plist */,
-				8818EFFD1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld */,
-				8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */,
+				888507151CD758DF002BB28C /* Core */,
+				8885070B1CD73555002BB28C /* View Controller */,
+				888507181CD75918002BB28C /* 90 Year View */,
+				8885070E1CD7358C002BB28C /* 1 Year View */,
+				8885070C1CD73562002BB28C /* Storyboard */,
+				8885070D1CD7356E002BB28C /* Resources */,
 			);
 			path = Weeks2;
 			sourceTree = "<group>";
@@ -161,12 +169,62 @@
 			path = Weeks2UITests;
 			sourceTree = "<group>";
 		};
-		8818F0371CD3A41600E8E3D0 /* Resources */ = {
+		8885070B1CD73555002BB28C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8818EFF81CD3096B00E8E3D0 /* ViewController.swift */,
+				8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */,
+				888507131CD752D1002BB28C /* ThirdViewController.swift */,
+				8885071D1CD75F7A002BB28C /* rootNavigationController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		8885070C1CD73562002BB28C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8818EFFA1CD3096B00E8E3D0 /* Main.storyboard */,
+				8818F0021CD3096B00E8E3D0 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		8885070D1CD7356E002BB28C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8818F0351CD3A3F300E8E3D0 /* Impact.ttf */,
+				8885070F1CD735A9002BB28C /* Colors.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8885070E1CD7358C002BB28C /* 1 Year View */ = {
+			isa = PBXGroup;
+			children = (
+				8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */,
+			);
+			name = "1 Year View";
+			sourceTree = "<group>";
+		};
+		888507151CD758DF002BB28C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8818EFF61CD3096B00E8E3D0 /* AppDelegate.swift */,
+				8818F0001CD3096B00E8E3D0 /* Assets.xcassets */,
+				8818F0051CD3096B00E8E3D0 /* Info.plist */,
+				8818EFFD1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		888507181CD75918002BB28C /* 90 Year View */ = {
+			isa = PBXGroup;
+			children = (
+				888507161CD75910002BB28C /* HolderView.swift */,
+				888507191CD7595F002BB28C /* RectangleLayer.swift */,
+				8885071B1CD75966002BB28C /* ArcLayer.swift */,
+			);
+			name = "90 Year View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,8 +414,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */,
+				888507101CD735A9002BB28C /* Colors.swift in Sources */,
+				8885071C1CD75966002BB28C /* ArcLayer.swift in Sources */,
+				8885071A1CD7595F002BB28C /* RectangleLayer.swift in Sources */,
 				8818EFFF1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld in Sources */,
+				888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */,
+				888507171CD75910002BB28C /* HolderView.swift in Sources */,
 				8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */,
+				8885071E1CD75F7A002BB28C /* rootNavigationController.swift in Sources */,
 				8818EFF91CD3096B00E8E3D0 /* ViewController.swift in Sources */,
 				8818EFF71CD3096B00E8E3D0 /* AppDelegate.swift in Sources */,
 			);
