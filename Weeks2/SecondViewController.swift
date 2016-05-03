@@ -12,9 +12,12 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet weak var collectionView90: UICollectionView!
     @IBOutlet weak var age: UILabel!
+
+    @IBOutlet weak var daysInWeek: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     // MARK: set Navigation Title Properties
         self.view.backgroundColor = Colors.lightgray
         let nav = self.navigationController?.navigationBar
@@ -23,12 +26,21 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: Colors.lightgray]
         self.navigationItem.title = "WEEKS"
 
-    
     //MARK: Add age to label
         let defaults = NSUserDefaults.standardUserDefaults()
-        let userAge = defaults.objectForKey("userAge") as? String ?? String()
-        age.text = userAge
+        let userAge = defaults.objectForKey("userAge") as? Int ?? Int()
+        let userDaysTilNextBirthday = defaults.objectForKey("userDaysTilNextBirthday") as? Int ?? Int()
+        daysInWeek.text =  "\(String(userDaysTilNextBirthday)) days"
+        daysInWeek.textColor = Colors.darkgrey
+        age.text = String(userAge)
         age.textColor = Colors.darkgrey
+        
+   // TODO: Flowlayout
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        collectionView90.collectionViewLayout.collectionViewContentSize()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 12, right: 12)
+        layout.itemSize = CGSize(width: 12, height: 18.5)
+        collectionView90 = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
     }
     
     // MARK: set how many images in collection view
@@ -45,22 +57,24 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         let imageorange = UIImage(named: "orangeteardrop")
         let imagered = UIImage(named: "redteardrop")
         
-        if indexPath.row <= 10
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let userWeeksTilNextBirthday = defaults.objectForKey("userWeeksTilNextBirthday") as? Int ?? Int()
+        
+        // TODO: correct week. note indexPath starts at 0
+        if indexPath.row < (52 - userWeeksTilNextBirthday)
         {
             cell.imageView.image = imageblack
-            return cell
         }
-        else if indexPath.row == 11
+        else if indexPath.row == (52 - userWeeksTilNextBirthday)
         {
             cell.imageView.image = imagered
-            return cell
         }
         else
         {
             cell.imageView.image = imageorange
-            return cell
         }
-    
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
