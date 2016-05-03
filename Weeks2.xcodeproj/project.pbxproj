@@ -19,12 +19,12 @@
 		8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */; };
 		8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */; };
 		8818F0361CD3A3F300E8E3D0 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8818F0351CD3A3F300E8E3D0 /* Impact.ttf */; };
+		883E2D4C1CD7880300F91E65 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883E2D4B1CD7880300F91E65 /* Dates.swift */; };
 		888507101CD735A9002BB28C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885070F1CD735A9002BB28C /* Colors.swift */; };
 		888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507131CD752D1002BB28C /* ThirdViewController.swift */; };
 		888507171CD75910002BB28C /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507161CD75910002BB28C /* HolderView.swift */; };
 		8885071A1CD7595F002BB28C /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507191CD7595F002BB28C /* RectangleLayer.swift */; };
 		8885071C1CD75966002BB28C /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885071B1CD75966002BB28C /* ArcLayer.swift */; };
-		8885071E1CD75F7A002BB28C /* rootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885071D1CD75F7A002BB28C /* rootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +62,12 @@
 		8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell90.swift; sourceTree = "<group>"; };
 		8818F0351CD3A3F300E8E3D0 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Impact.ttf; path = ../Impact.ttf; sourceTree = "<group>"; };
+		883E2D4B1CD7880300F91E65 /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		8885070F1CD735A9002BB28C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		888507131CD752D1002BB28C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		888507161CD75910002BB28C /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 		888507191CD7595F002BB28C /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		8885071B1CD75966002BB28C /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
-		8885071D1CD75F7A002BB28C /* rootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rootNavigationController.swift; sourceTree = "<group>"; };
 		D4DAB7064E8363B6F004961A /* Pods_Weeks2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weeks2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D7ED062F05B173593851B0 /* Pods-Weeks2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.debug.xcconfig"; sourceTree = "<group>"; };
 		EF90C0E62CFAFB9CC4BB4FD4 /* Pods-Weeks2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weeks2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weeks2/Pods-Weeks2.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +175,6 @@
 				8818EFF81CD3096B00E8E3D0 /* ViewController.swift */,
 				8818F02F1CD3750300E8E3D0 /* SecondViewController.swift */,
 				888507131CD752D1002BB28C /* ThirdViewController.swift */,
-				8885071D1CD75F7A002BB28C /* rootNavigationController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -194,6 +193,7 @@
 			children = (
 				8818F0351CD3A3F300E8E3D0 /* Impact.ttf */,
 				8885070F1CD735A9002BB28C /* Colors.swift */,
+				883E2D4B1CD7880300F91E65 /* Dates.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -415,13 +415,13 @@
 			files = (
 				8818F0301CD3750300E8E3D0 /* SecondViewController.swift in Sources */,
 				888507101CD735A9002BB28C /* Colors.swift in Sources */,
+				883E2D4C1CD7880300F91E65 /* Dates.swift in Sources */,
 				8885071C1CD75966002BB28C /* ArcLayer.swift in Sources */,
 				8885071A1CD7595F002BB28C /* RectangleLayer.swift in Sources */,
 				8818EFFF1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld in Sources */,
 				888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */,
 				888507171CD75910002BB28C /* HolderView.swift in Sources */,
 				8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */,
-				8885071E1CD75F7A002BB28C /* rootNavigationController.swift in Sources */,
 				8818EFF91CD3096B00E8E3D0 /* ViewController.swift in Sources */,
 				8818EFF71CD3096B00E8E3D0 /* AppDelegate.swift in Sources */,
 			);

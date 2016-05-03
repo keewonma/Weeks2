@@ -46,11 +46,15 @@ class ViewController: UIViewController {
         dateFormatter2.dateStyle = NSDateFormatterStyle.FullStyle
         dateFormatter2.timeStyle = NSDateFormatterStyle.NoStyle
 
+        let now = NSDate()
+        let userAge = String(now.yearsFrom(sender.date))
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         let userBirthday = dateFormatter2.stringFromDate(sender.date)
         defaults.setValue(userBirthday, forKey: "Birthday")
         defaults.setValue(sender.date, forKey: "bDate")
-
+        defaults.setValue(userAge, forKey: "userAge")
+        
         dateTextField.text = dateFormatter.stringFromDate(sender.date)
         
     }

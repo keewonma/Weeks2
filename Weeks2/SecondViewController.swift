@@ -11,12 +11,24 @@ import UIKit
 class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView90: UICollectionView!
+    @IBOutlet weak var age: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    // MARK: set Navigation Title Properties
         self.view.backgroundColor = Colors.lightgray
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.Black
+        nav?.tintColor = Colors.darkgrey
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: Colors.lightgray]
+        self.navigationItem.title = "WEEKS"
 
-        // Do any additional setup after loading the view.
+    
+    //MARK: Add age to label
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let userAge = defaults.objectForKey("userAge") as? String ?? String()
+        age.text = userAge
+        age.textColor = Colors.darkgrey
     }
     
     // MARK: set how many images in collection view

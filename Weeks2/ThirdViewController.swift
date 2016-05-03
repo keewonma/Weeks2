@@ -37,8 +37,8 @@ class ThirdViewController: UIViewController, HolderViewDelegate {
         let boxSizeWidth = view.bounds.width - 100
         let boxSizeHeight = view.bounds.height - 100
         
-        holderView.frame = CGRect(x: view.bounds.width / 2 - boxSizeWidth / 2,
-            y: view.bounds.height / 2 - boxSizeHeight / 2,
+        holderView.frame = CGRect(x: (view.bounds.width / 2 - (boxSizeWidth) / 2),
+            y: (view.bounds.height / 2 - (boxSizeHeight) / 2),
             width: boxSizeWidth,
             height: boxSizeHeight)
         holderView.parentFrame = view.frame
