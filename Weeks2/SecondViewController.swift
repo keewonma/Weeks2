@@ -33,11 +33,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     // MARK: set how many images in collection view
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  4
-    }
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 13
+        return  52
     }
     
     // MARK: add images to collection view
@@ -45,20 +41,26 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         collectionView.backgroundColor = Colors.lightgray
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell90
-        let image = UIImage(named: "blackteardrop")
+        let imageblack = UIImage(named: "blackteardrop")
+        let imageorange = UIImage(named: "orangeteardrop")
+        let imagered = UIImage(named: "redteardrop")
         
-        cell.imageView?.image = image
-//        if indexPath.row >= 10
-//        {
-//            cell.imageView.image = UIImage(named: "blackteardrop")
-//            return cell
-//        }
-//        else
-//        {
-//            cell.imageView.image = UIImage(named: "blackteardrop")
-//            return cell
-//        }
-        return cell
+        if indexPath.row <= 10
+        {
+            cell.imageView.image = imageblack
+            return cell
+        }
+        else if indexPath.row == 11
+        {
+            cell.imageView.image = imagered
+            return cell
+        }
+        else
+        {
+            cell.imageView.image = imageorange
+            return cell
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
