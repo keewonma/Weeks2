@@ -20,6 +20,7 @@
 		8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */; };
 		8818F0361CD3A3F300E8E3D0 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8818F0351CD3A3F300E8E3D0 /* Impact.ttf */; };
 		883E2D4C1CD7880300F91E65 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883E2D4B1CD7880300F91E65 /* Dates.swift */; };
+		8861FF231CDA4D9D00D10DA4 /* ArcWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861FF221CDA4D9D00D10DA4 /* ArcWeek.swift */; };
 		888507101CD735A9002BB28C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885070F1CD735A9002BB28C /* Colors.swift */; };
 		888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507131CD752D1002BB28C /* ThirdViewController.swift */; };
 		888507171CD75910002BB28C /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888507161CD75910002BB28C /* HolderView.swift */; };
@@ -63,6 +64,7 @@
 		8818F0311CD3784000E8E3D0 /* CollectionViewCell90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell90.swift; sourceTree = "<group>"; };
 		8818F0351CD3A3F300E8E3D0 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Impact.ttf; path = ../Impact.ttf; sourceTree = "<group>"; };
 		883E2D4B1CD7880300F91E65 /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		8861FF221CDA4D9D00D10DA4 /* ArcWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcWeek.swift; sourceTree = "<group>"; };
 		8885070F1CD735A9002BB28C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		888507131CD752D1002BB28C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		888507161CD75910002BB28C /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				888507161CD75910002BB28C /* HolderView.swift */,
 				888507191CD7595F002BB28C /* RectangleLayer.swift */,
 				8885071B1CD75966002BB28C /* ArcLayer.swift */,
+				8861FF221CDA4D9D00D10DA4 /* ArcWeek.swift */,
 			);
 			name = "90 Year View";
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				8885071C1CD75966002BB28C /* ArcLayer.swift in Sources */,
 				8885071A1CD7595F002BB28C /* RectangleLayer.swift in Sources */,
 				8818EFFF1CD3096B00E8E3D0 /* Weeks2.xcdatamodeld in Sources */,
+				8861FF231CDA4D9D00D10DA4 /* ArcWeek.swift in Sources */,
 				888507141CD752D1002BB28C /* ThirdViewController.swift in Sources */,
 				888507171CD75910002BB28C /* HolderView.swift in Sources */,
 				8818F0321CD3784000E8E3D0 /* CollectionViewCell90.swift in Sources */,

@@ -22,7 +22,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         self.view.backgroundColor = Colors.lightgray
         let nav = self.navigationController?.navigationBar
         nav?.barStyle = UIBarStyle.Black
-        nav?.tintColor = Colors.darkgrey
+        nav?.tintColor = Colors.darkgray
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: Colors.lightgray]
         self.navigationItem.title = "WEEKS"
 
@@ -31,16 +31,10 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         let userAge = defaults.objectForKey("userAge") as? Int ?? Int()
         let userDaysTilNextBirthday = defaults.objectForKey("userDaysTilNextBirthday") as? Int ?? Int()
         daysInWeek.text =  "\(String(userDaysTilNextBirthday)) days"
-        daysInWeek.textColor = Colors.darkgrey
+        daysInWeek.textColor = Colors.darkgray
         age.text = String(userAge)
-        age.textColor = Colors.darkgrey
+        age.textColor = Colors.darkgray
         
-   // TODO: Flowlayout
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        collectionView90.collectionViewLayout.collectionViewContentSize()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 12, right: 12)
-        layout.itemSize = CGSize(width: 12, height: 18.5)
-        collectionView90 = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
     }
     
     // MARK: set how many images in collection view

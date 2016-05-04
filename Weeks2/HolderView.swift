@@ -18,7 +18,7 @@ class HolderView: UIView {
     let redRectangleLayer = RectangleLayer()
     let blackRectangleLayer = RectangleLayer()
     let arcLayer = ArcLayer()
-    
+    let arcWeek = ArcWeek()
     
     var parentFrame :CGRect = CGRectZero
     weak var delegate: HolderViewDelegate?
@@ -33,31 +33,41 @@ class HolderView: UIView {
     }
     
     func addRect() {
-        NSTimer.scheduledTimerWithTimeInterval(0.3, target: self,
-            selector: "drawRedAnimatedRectangle",
-            userInfo: nil, repeats: false)
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self,
-            selector: "drawBlackAnimatedRectangle",
-            userInfo: nil, repeats: false)
-        
+        NSTimer.scheduledTimerWithTimeInterval(0.1,
+                                               target: self,
+                                               selector: #selector(HolderView.drawRedAnimatedRectangle),
+                                               userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.3,
+                                               target: self,
+                                               selector: #selector(HolderView.drawBlackAnimatedRectangle),
+                                               userInfo: nil, repeats: false)
+
     }
     
     func drawRedAnimatedRectangle() {
         layer.addSublayer(redRectangleLayer)
         redRectangleLayer.animateStrokeWithColor(Colors.red)
-        NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: "drawArc",
+        NSTimer.scheduledTimerWithTimeInterval(0.55, target: self, selector: #selector(HolderView.drawArc),
             userInfo: nil, repeats: false)
         
     }
     
     func drawBlackAnimatedRectangle() {
         layer.addSublayer(blackRectangleLayer)
-        blackRectangleLayer.animateStrokeWithColor(Colors.darkgrey)
+        blackRectangleLayer.animateStrokeWithColor(Colors.darkgray)
     }
     
+
     func drawArc() {
         layer.addSublayer(arcLayer)
         arcLayer.animate()
+        NSTimer.scheduledTimerWithTimeInterval(1.00, target: self, selector: #selector(HolderView.drawArcWeek),
+                                               userInfo: nil, repeats: false)
+    }
+    
+    func drawArcWeek() {
+        layer.addSublayer(arcWeek)
+        arcWeek.animate()
     }
 
 

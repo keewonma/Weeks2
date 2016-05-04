@@ -19,10 +19,11 @@ class ViewController: UIViewController {
         datePickerView.backgroundColor = UIColor(red:0.12, green:0.13, blue:0.14, alpha:1.0)
         datePickerView.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         datePickerView.setValue(0.8, forKeyPath: "alpha")
-        
+        datePickerView.maximumDate = NSCalendar.currentCalendar().dateByAddingUnit([.Year, .Month, .Day], value: 0, toDate: NSDate(), options: [])
+        datePickerView.minimumDate = NSCalendar.currentCalendar().dateByAddingUnit(.Year, value: -90, toDate: NSDate(), options: [])
         sender.inputView = datePickerView
         datePickerView.addTarget(self,
-                                action: "datePickerValueChanged:",
+                                action: #selector(ViewController.datePickerValueChanged(_:)),
                                 forControlEvents: UIControlEvents.ValueChanged)
     }
     
@@ -100,7 +101,7 @@ class ViewController: UIViewController {
         doneToolbar.barTintColor = UIColor(red:0.12, green:0.13, blue:0.14, alpha:1.0)
         
         let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: Selector("doneButtonAction"))
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: #selector(ViewController.doneButtonAction))
         done.tintColor = UIColor.whiteColor()
         
         var items: [UIBarButtonItem] = []
